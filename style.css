@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-image {
+    width: 40vw;
+    height: 100vh;
+    position: relative;
+    background-color: #005656;
+    background-image: url(assets/samuel-ferrara-unsplash-medium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-container {
+    width: inherit;
+    height: 15vh;
+    position: absolute;
+    top: 15vh;
+    background-color: #0614149d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.logo {
+    background-image: url(assets/tree-logo-new.svg);
+    width: 12vh;
+    height: 12vh;
+    background-repeat: no-repeat;
+}
+
+.photo-credit {
+    position: absolute;
+    top: 97vh;
+}
