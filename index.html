@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tree of Life | Sign-up</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <main>
         <div class="left side">
@@ -17,17 +23,77 @@
                 </div>
                 <div class="photo-credit">
                     Photo by:
-                    <a href="https://unsplash.com/@samferrara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">
-                         Samuel Ferrara</a> on 
-                        <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">
-                            Unsplash</a>
-                        </div>
+                    <a href="https://unsplash.com/@samferrara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        target="_blank">
+                        Samuel Ferrara</a> on
+                    <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                        target="_blank">
+                        Unsplash</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="intro right">
+                <p>
+                    This is not a real online service! You know you need something like
+                    this in your life to help you realize your deepest dreams.<br>
+                    Sign up <em>now</em> to get started.
+                </p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+
+            <form action="" method="post" id="regForm" class="right">
+                <p>Let's do this!</p>
+                <div class="form-row">
+                    <div>
+                        <label for="fName">FIRST NAME</label>
+                        <input type="text" name="first_name" id="fName" minlength="3">
+                    </div>
+                    <div>
+                        <label for="lName">LAST NAME</label>
+                        <input type="text" name="last_name" id="lName" minlength="3">
                     </div>
                 </div>
-                
-                <div class="right side">
-                    
+
+                <div class="form-row">
+                    <div>
+                        <label for="email">E-MAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
                 </div>
-            </main>
+
+                <div class="form-row">
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input 
+                        type="password" 
+                        name="password" 
+                        id="password" 
+                        autocomplete="off" 
+                        required>
+
+                        <p id="invalid">* Passwords do not match</p>
+                    </div>
+                    <div>
+                        <label for="confirm-p">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-p" autocomplete="off" required/>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="bottom right">
+                <button type="button" form="regForm" id="submit">Create Account</button>
+                <p>Already have an account? <a href="http://" target="_blank" rel="noopener noreferrer">Sign in</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
 </body>
+
 </html>
