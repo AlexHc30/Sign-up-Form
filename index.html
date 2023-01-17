@@ -48,22 +48,22 @@
                 <div class="form-row">
                     <div>
                         <label for="fName">FIRST NAME</label>
-                        <input type="text" name="first_name" id="fName" minlength="3">
+                        <input type="text" name="first_name" class="formInput" id="fName" minlength="2">
                     </div>
                     <div>
                         <label for="lName">LAST NAME</label>
-                        <input type="text" name="last_name" id="lName" minlength="3">
+                        <input type="text" name="last_name" class="formInput" id="lName" minlength="2">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div>
                         <label for="email">E-MAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" class="formInput" id="email">
                     </div>
                     <div>
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input type="tel" name="phone" class="formInput" id="phone">
                     </div>
                 </div>
 
@@ -74,14 +74,16 @@
                         type="password" 
                         name="password" 
                         id="password" 
-                        autocomplete="off" 
-                        required>
+                        autocomplete="off" />
 
-                        <p id="invalid">* Passwords do not match</p>
+                        <p id="invalid" style="display: none;">* Passwords do not match</p>
                     </div>
                     <div>
                         <label for="confirm-p">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-p" autocomplete="off" required/>
+                        <input 
+                        type="password" 
+                        id="confirm-p" 
+                        autocomplete="off" />
                     </div>
                 </div>
 
