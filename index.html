@@ -63,7 +63,13 @@
                     </div>
                     <div>
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" class="formInput" id="phone">
+                        <input
+                         type="tel"
+                         name="phone" 
+                         class="formInput" 
+                         id="phone" 
+                         pattern="((\+|00)?[1-9]{2}|0)[1-9]( ?[0-9]){8}" 
+                         title="Please enter a valid phone number, example: 0733987123">
                     </div>
                 </div>
 
@@ -74,7 +80,8 @@
                         type="password" 
                         name="password" 
                         id="password" 
-                        autocomplete="off" />
+                        autocomplete="off"
+                        minlength="8" />
 
                         <p id="invalid" style="display: none;">* Passwords do not match</p>
                     </div>
@@ -86,10 +93,10 @@
                         autocomplete="off" />
                     </div>
                 </div>
-
             </form>
 
             <div class="bottom right">
+                <p id="unfilled" style="display: none">* All fields are required. Please make sure to fill them in.</p>
                 <button type="button" form="regForm" id="submit">Create Account</button>
                 <p>Already have an account? <a href="http://" target="_blank" rel="noopener noreferrer">Sign in</a></p>
             </div>
